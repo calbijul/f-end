@@ -1,46 +1,185 @@
 import { FC } from "react";
 import Button from "../components/buttons";
 import Card from "../components/cards";
+import ImgCard from "../components/imgCard";
 
 const Components: FC = () => {
   return (
-    <>
-      <div className="p-5 py-11">
-        {/* <h1 className="flex justify-center xs:text-h3 sm:text-h2 md:text-h1 lg:text-h2 xl:text-h2 mb-2">Typography</h1> */}
-        <h1 className="xs:text-h3 sm:text-h2 md:text-h1 lg:text-h1  bg-pm-600">
-          This is Heading H1
-        </h1>
-        <h2 className="xs:text-h4 sm:text-h3 md:text-h2 lg:text-h2 xl:text-h2 bg-pm-300">
-          This is Heading H2
-        </h2>
-        <h3 className="xs:text-h5 sm:text-h4 md:text-h3 lg:text-h3 xl:text-h3 bg-pm-50">
-          This is Heading H3
-        </h3>
-        <h4 className="xs:text-h6 sm:text-h5 md:text-h4 lg:text-h4 xl:text-h4 bg-nt-100">
-          This is Heading H4
-        </h4>
-        <h5 className="xs:text-h6 sm:text-h5 md:text-h5 lg:text-h5 xl:text-h5 bg-nt-300">
-          This is Heading H5
-        </h5>
-        <h6 className="xs:text-h6 sm:text-h6 md:text-h6 lg:text-h6 xl:text-h6 bg-nt-500">
-          This is Heading H6
-        </h6>
-        <p className="font-helvetica bg-nt-700 text-nt-white">This is a paragraph with helvetica.</p>
-        <p className="text-body-big-reg bg-nt-900 text-nt-white">Big Regular (18/26)</p>
-        <p className="text-body-big-str">Big Strong (18/26)</p>
-        <p className="text-base-big-reg">Base Regular (16/24)</p>
-        <p className="text-small-reg">Small Regular (14/20)</p>
-        <p className="text-caption-reg">Caption Regular (12/auto)</p>
-        <p className="text-all-caps">ALL CAPS (12/auto)</p> 
-
-        {/* <h1>Buttons</h1> */}
-        <Button size="sm" text="Small Button" />
-        <Button size="lg" text="Large Button" />
-        <Card size="sm" text="Small Card" />
-        <Card size="lg" text="Large Card" />
-       
+    <div className="p-20 py-16">
+      {/* Display 2XL Row */}
+      <div className="mb-8">
+        <p className="font-playfair text-display-2xl-regular">Display 2XL Regular</p>
+        <p className="font-playfair text-display-2xl-medium">Display 2XL Medium</p>
+        <p className="font-playfair text-display-2xl-semibold">Display 2XL SemiBold</p>
+        <p className="font-playfair text-display-2xl-bold">Display 2XL Bold</p>
+        <p className="font-playfair text-display-2xl-italic">Display 2XL Italic</p>
       </div>
-    </>
+
+      {/* Display XL Row */}
+      <div className="mb-8">
+        <p className="font-playfair text-display-xl-regular">Display XL Regular</p>
+        <p className="font-playfair text-display-xl-medium">Display XL Medium</p>
+        <p className="font-playfair text-display-xl-semibold">Display XL SemiBold</p>
+        <p className="font-playfair text-display-xl-bold">Display XL Bold</p>
+        <p className="font-playfair text-display-xl-italic">Display XL Italic</p>
+      </div>
+
+      {/* Display LG Row */}
+      <div className="mb-8">
+        <p className="font-playfair text-display-lg-regular">Display LG Regular</p>
+        <p className="font-playfair text-display-lg-medium">Display LG Medium</p>
+        <p className="font-playfair text-display-lg-semibold">Display LG SemiBold</p>
+        <p className="font-playfair text-display-lg-bold">Display LG Bold</p>
+        <p className="font-playfair text-display-lg-italic">Display LG Italic</p>
+      </div>
+
+      {/* Display MD Row */}
+      <div className="mb-8">
+        <p className="font-playfair text-display-md-regular">Display MD Regular</p>
+        <p className="font-playfair text-display-md-medium">Display MD Medium</p>
+        <p className="font-playfair text-display-md-semibold">Display MD SemiBold</p>
+        <p className="font-playfair text-display-md-bold">Display MD Bold</p>
+        <p className="font-playfair text-display-md-italic">Display MD Italic</p>
+      </div>
+
+      {/* Display SM Row */}
+      <div className="mb-8">
+        <p className="font-playfair text-display-sm-regular">Display SM Regular</p>
+        <p className="font-playfair text-display-sm-medium">Display SM Medium</p>
+        <p className="font-playfair text-display-sm-semibold">Display SM SemiBold</p>
+        <p className="font-playfair text-display-sm-bold">Display SM Bold</p>
+        <p className="font-playfair text-display-sm-italic">Display SM Italic</p>
+      </div>
+
+      {/* Display XS Row */}
+      <div className="mb-8">
+        <p className="font-playfair text-display-xs-regular">Display XS Regular</p>
+        <p className="font-playfair text-display-xs-medium">Display XS Medium</p>
+        <p className="font-playfair text-display-xs-semibold">Display XS SemiBold</p>
+        <p className="font-playfair text-display-xs-bold">Display XS Bold</p>
+        <p className="font-playfair text-display-xs-italic">Display XS Italic</p>
+      </div>
+
+      {/* Body XL Row */}
+      <div className="mb-8">
+        <p className="font-outfit text-body-xl-light">Body XL Light</p>
+        <p className="font-outfit text-body-xl-regular">Body XL Regular</p>
+        <p className="font-outfit text-body-xl-medium">Body XL Medium</p>
+        <p className="font-outfit text-body-xl-semibold">Body XL SemiBold</p>
+        <p className="font-outfit text-body-xl-bold">Body XL Bold</p>
+      </div>
+
+      {/* Body LG Row */}
+      <div className="mb-8">
+        <p className="font-outfit text-body-lg-light">Body LG Light</p>
+        <p className="font-outfit text-body-lg-regular">Body LG Regular</p>
+        <p className="font-outfit text-body-lg-medium">Body LG Medium</p>
+        <p className="font-outfit text-body-lg-semibold">Body LG SemiBold</p>
+        <p className="font-outfit text-body-lg-bold">Body LG Bold</p>
+      </div>
+
+      {/* Body MD Row */}
+      <div className="mb-8">
+        <p className="font-outfit text-body-md-light">Body MD Light</p>
+        <p className="font-outfit text-body-md-regular">Body MD Regular</p>
+        <p className="font-outfit text-body-md-medium">Body MD Medium</p>
+        <p className="font-outfit text-body-md-semibold">Body MD SemiBold</p>
+        <p className="font-outfit text-body-md-bold">Body MD Bold</p>
+      </div>
+
+      {/* Body SM Row */}
+      <div className="mb-8">
+        <p className="font-outfit text-body-sm-light">Body SM Light</p>
+        <p className="font-outfit text-body-sm-regular">Body SM Regular</p>
+        <p className="font-outfit text-body-sm-medium">Body SM Medium</p>
+        <p className="font-outfit text-body-sm-semibold">Body SM SemiBold</p>
+        <p className="font-outfit text-body-sm-bold">Body SM Bold</p>
+        <p className="font-outfit text-body-sm-wider">Body SM Wider</p>
+        <p className="font-outfit text-body-sm-widest">Body SM Widest</p>
+      </div>
+
+      {/* Body XS Row */}
+      <div className="mb-8">
+        <p className="font-outfit text-body-xs-light">Body XS Light</p>
+        <p className="font-outfit text-body-xs-regular">Body XS Regular</p>
+        <p className="font-outfit text-body-xs-medium">Body XS Medium</p>
+        <p className="font-outfit text-body-xs-semibold">Body XS SemiBold</p>
+        <p className="font-outfit text-body-xs-bold">Body XS Bold</p>
+      </div>
+
+      {/* Button and Card */}
+      <Button size="sm" text="Small Button" />
+      <Button size="lg" text="Large Button" />
+      <Card size="sm" text="Small Card" />
+      <Card size="lg" text="Large Card" />
+      <ImgCard size="lg" text="Hello World" image="img/mountain.jpg" />
+
+      <div className="p-20 py-16 grid grid-cols-3 gap-8 justify-center">
+      {/* Shadow XS */}
+      <div
+        className="w-32 h-32 bg-gray-200 text-center flex items-center justify-center"
+        style={{
+          boxShadow: '0 1px 2px rgba(17, 24, 39, 0.05)',
+        }}
+      >
+        <p className="text-sm">Shadow XS</p>
+      </div>
+
+      {/* Shadow SM */}
+      <div
+        className="w-32 h-32 bg-gray-200 text-center flex items-center justify-center"
+        style={{
+          boxShadow:
+            '0 1px 3px rgba(17, 24, 39, 0.10), 0 1px 2px rgba(17, 24, 39, 0.06)',
+        }}
+      >
+        <p className="text-sm">Shadow SM</p>
+      </div>
+
+      {/* Shadow MD */}
+      <div
+        className="w-32 h-32 bg-gray-200 text-center flex items-center justify-center"
+        style={{
+          boxShadow:
+            '0 4px 8px -2px rgba(17, 24, 39, 0.06), 0 2px 4px -2px rgba(17, 24, 39, 0.06)',
+        }}
+      >
+        <p className="text-sm">Shadow MD</p>
+      </div>
+
+      {/* Shadow LG */}
+      <div
+        className="w-32 h-32 bg-gray-200 text-center flex items-center justify-center"
+        style={{
+          boxShadow:
+            '0 12px 16px -4px rgba(17, 24, 39, 0.10), 0 4px 6px -2px rgba(17, 24, 39, 0.05)',
+        }}
+      >
+        <p className="text-sm">Shadow LG</p>
+      </div>
+
+      {/* Shadow XL */}
+      <div
+        className="w-32 h-32 bg-gray-200 text-center flex items-center justify-center"
+        style={{
+          boxShadow:
+            '0 20px 24px -4px rgba(17, 24, 39, 0.10), 0 8px 8px -4px rgba(17, 24, 39, 0.04)',
+        }}
+      >
+        <p className="text-sm">Shadow XL</p>
+      </div>
+
+      {/* Shadow 2XL */}
+      <div
+        className="w-32 h-32 bg-gray-200 text-center flex items-center justify-center"
+        style={{
+          boxShadow: '0 24px 48px -12px rgba(17, 24, 39, 0.20)',
+        }}
+      >
+        <p className="text-sm">Shadow 2XL</p>
+      </div>
+    </div>
+    </div>
   );
 };
 
