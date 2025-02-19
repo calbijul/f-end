@@ -6,7 +6,6 @@ import ImgCard from "../components/imgCard";
 const Components: FC = () => {
   return (
     <div className="p-20 py-16">
-      {/* Display 2XL Row */}
       <div className="mb-8">
         <p className="font-playfair text-display-2xl-regular">Display 2XL Regular</p>
         <p className="font-playfair text-display-2xl-medium">Display 2XL Medium</p>
@@ -15,7 +14,6 @@ const Components: FC = () => {
         <p className="font-playfair text-display-2xl-italic">Display 2XL Italic</p>
       </div>
 
-      {/* Display XL Row */}
       <div className="mb-8">
         <p className="font-playfair text-display-xl-regular">Display XL Regular</p>
         <p className="font-playfair text-display-xl-medium">Display XL Medium</p>
@@ -24,7 +22,6 @@ const Components: FC = () => {
         <p className="font-playfair text-display-xl-italic">Display XL Italic</p>
       </div>
 
-      {/* Display LG Row */}
       <div className="mb-8">
         <p className="font-playfair text-display-lg-regular">Display LG Regular</p>
         <p className="font-playfair text-display-lg-medium">Display LG Medium</p>
@@ -33,7 +30,6 @@ const Components: FC = () => {
         <p className="font-playfair text-display-lg-italic">Display LG Italic</p>
       </div>
 
-      {/* Display MD Row */}
       <div className="mb-8">
         <p className="font-playfair text-display-md-regular">Display MD Regular</p>
         <p className="font-playfair text-display-md-medium">Display MD Medium</p>
@@ -42,7 +38,6 @@ const Components: FC = () => {
         <p className="font-playfair text-display-md-italic">Display MD Italic</p>
       </div>
 
-      {/* Display SM Row */}
       <div className="mb-8">
         <p className="font-playfair text-display-sm-regular">Display SM Regular</p>
         <p className="font-playfair text-display-sm-medium">Display SM Medium</p>
@@ -51,7 +46,6 @@ const Components: FC = () => {
         <p className="font-playfair text-display-sm-italic">Display SM Italic</p>
       </div>
 
-      {/* Display XS Row */}
       <div className="mb-8">
         <p className="font-playfair text-display-xs-regular">Display XS Regular</p>
         <p className="font-playfair text-display-xs-medium">Display XS Medium</p>
@@ -59,8 +53,7 @@ const Components: FC = () => {
         <p className="font-playfair text-display-xs-bold">Display XS Bold</p>
         <p className="font-playfair text-display-xs-italic">Display XS Italic</p>
       </div>
-
-      {/* Body XL Row */}
+ 
       <div className="mb-8">
         <p className="font-outfit text-body-xl-light">Body XL Light</p>
         <p className="font-outfit text-body-xl-regular">Body XL Regular</p>
@@ -69,7 +62,6 @@ const Components: FC = () => {
         <p className="font-outfit text-body-xl-bold">Body XL Bold</p>
       </div>
 
-      {/* Body LG Row */}
       <div className="mb-8">
         <p className="font-outfit text-body-lg-light">Body LG Light</p>
         <p className="font-outfit text-body-lg-regular">Body LG Regular</p>
@@ -77,8 +69,7 @@ const Components: FC = () => {
         <p className="font-outfit text-body-lg-semibold">Body LG SemiBold</p>
         <p className="font-outfit text-body-lg-bold">Body LG Bold</p>
       </div>
-
-      {/* Body MD Row */}
+  
       <div className="mb-8">
         <p className="font-outfit text-body-md-light">Body MD Light</p>
         <p className="font-outfit text-body-md-regular">Body MD Regular</p>
@@ -87,7 +78,6 @@ const Components: FC = () => {
         <p className="font-outfit text-body-md-bold">Body MD Bold</p>
       </div>
 
-      {/* Body SM Row */}
       <div className="mb-8">
         <p className="font-outfit text-body-sm-light">Body SM Light</p>
         <p className="font-outfit text-body-sm-regular">Body SM Regular</p>
@@ -98,7 +88,6 @@ const Components: FC = () => {
         <p className="font-outfit text-body-sm-widest">Body SM Widest</p>
       </div>
 
-      {/* Body XS Row */}
       <div className="mb-8">
         <p className="font-outfit text-body-xs-light">Body XS Light</p>
         <p className="font-outfit text-body-xs-regular">Body XS Regular</p>
@@ -107,7 +96,6 @@ const Components: FC = () => {
         <p className="font-outfit text-body-xs-bold">Body XS Bold</p>
       </div>
 
-      {/* Button and Card */}
       <Button size="sm" text="Small Button" />
       <Button size="lg" text="Large Button" />
       <Card size="sm" text="Small Card" />
@@ -115,7 +103,6 @@ const Components: FC = () => {
       <ImgCard size="lg" text="Hello World" image="img/mountain.jpg" />
 
       <div className="p-20 py-16 grid grid-cols-3 gap-8 justify-center">
-      {/* Shadow XS */}
       <div
         className="w-32 h-32 bg-gray-200 text-center flex items-center justify-center"
         style={{
@@ -125,7 +112,6 @@ const Components: FC = () => {
         <p className="text-sm">Shadow XS</p>
       </div>
 
-      {/* Shadow SM */}
       <div
         className="w-32 h-32 bg-gray-200 text-center flex items-center justify-center"
         style={{
@@ -136,7 +122,6 @@ const Components: FC = () => {
         <p className="text-sm">Shadow SM</p>
       </div>
 
-      {/* Shadow MD */}
       <div
         className="w-32 h-32 bg-gray-200 text-center flex items-center justify-center"
         style={{
@@ -147,7 +132,6 @@ const Components: FC = () => {
         <p className="text-sm">Shadow MD</p>
       </div>
 
-      {/* Shadow LG */}
       <div
         className="w-32 h-32 bg-gray-200 text-center flex items-center justify-center"
         style={{
@@ -158,7 +142,6 @@ const Components: FC = () => {
         <p className="text-sm">Shadow LG</p>
       </div>
 
-      {/* Shadow XL */}
       <div
         className="w-32 h-32 bg-gray-200 text-center flex items-center justify-center"
         style={{
@@ -169,7 +152,6 @@ const Components: FC = () => {
         <p className="text-sm">Shadow XL</p>
       </div>
 
-      {/* Shadow 2XL */}
       <div
         className="w-32 h-32 bg-gray-200 text-center flex items-center justify-center"
         style={{
