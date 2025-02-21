@@ -1,18 +1,47 @@
-import { FC } from "react";
+import { FC, useState } from "react";
 import Button from "../components/buttons";
 import ImgCard from "../components/imgCard";
 import PhotoCard from "../components/photoCard";
 
 const Homepage: FC = () => {
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+
+  const toggleSidebar = () => {
+    setIsSidebarOpen(!isSidebarOpen);
+  };
+
   return (
     <div className="flex flex-col min-h-screen">
+      {/* Sidebar */}
+      <div
+  className={`fixed inset-y-0 right-0 bg-white z-10 transform w-1/2 ${
+    isSidebarOpen ? "translate-x-0" : "translate-x-full"
+  } transition-transform duration-300 ease-in-out md:hidden`}
+>
+  <div className="flex justify-end p-4">
+    <button onClick={toggleSidebar} className="text-white text-3xl">
+      &times;
+    </button>
+  </div>
+  <nav className="flex flex-col items-center">
+    <p className="text-black hover:text-pm-300 font-medium py-2 px-4 cursor-pointer">About</p>
+    <p className="text-black hover:text-pm-300 font-medium py-2 px-4 cursor-pointer">Services</p>
+    <p className="text-black hover:text-pm-300 font-medium py-2 px-4 cursor-pointer whitespace-nowrap">
+      Our Work
+    </p>
+    <Button size="sm" text="CONTACT US" />
+  </nav>
+</div>
+
+
+      {/* Header */}
       <header className="bg-white p-4 xs:px-4 sm:px-8 md:px-16 lg:px-32 text-black flex justify-between items-center z-20 relative overflow-auto">
         <h1 className="text-2xl sm:text-3xl font-bold tracking-widest text-black">
           INTEO
         </h1>
 
-        <nav className="flex space-x-4 flex-1 justify-end items-center overflow-auto">
-          <div className="flex space-x-4 overflow-auto ">
+        <nav className="hidden md:flex space-x-4 flex-1 justify-end items-center overflow-auto">
+          <div className="flex space-x-4 overflow-auto">
             <p className="text-black font-medium hover:text-pm-300 py-2 px-4 cursor-pointer">
               About
             </p>
@@ -25,6 +54,13 @@ const Homepage: FC = () => {
           </div>
           <Button size="sm" text="CONTACT US" />
         </nav>
+
+        <button
+          onClick={toggleSidebar}
+          className="md:hidden text-3xl text-black focus:outline-none"
+        >
+          &#9776;
+        </button>
       </header>
 
       <main className="flex-grow">
