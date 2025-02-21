@@ -82,10 +82,10 @@ const Homepage: FC = () => {
             </div>
 
             <div className="flex justify-center px-4">
-              <PhotoCard size="sm" text="Hello World" image="img/Image1.png" />
+              <PhotoCard size="sm" image="img/Image1.png" />
             </div>
             <div className="flex justify-center items-center ">
-              <PhotoCard size="sm" text="Hello World" image="img/Image2.png" />
+              <PhotoCard size="sm" image="img/Image2.png" />
             </div>
           </div>
 
@@ -139,27 +139,35 @@ const Homepage: FC = () => {
         </main>
 
         <footer className="mt-auto">
-          <div className="flex items-center px-4 sm:px-8 md:px-16 lg:px-32">
-            <span className="w-full h-[1px] bg-pm-300 mt-[1px]"></span>
-          </div>
+  <div className="flex items-center px-4 sm:px-8 md:px-16 lg:px-32">
+    <span className="w-full h-[1px] bg-pm-300 mt-[1px]"></span>
+  </div>
 
-          <div className="flex px-4 sm:px-8 md:px-16 lg:px-32 mt-5">
-            <div className="w-full p-4">
-              <p className="text-body-md-light font-outfit text-pm-600">
-                © 2022 Inteo - Award winning studio. Made with love by Landify
-              </p>
-            </div>
+  <div className="flex px-4 sm:px-8 md:px-16 lg:px-32 mt-5">
+    <div className="w-full p-4">
+      <p className="text-body-md-light font-outfit text-pm-600">
+        © 2022 Inteo - Award winning studio. Made with love by Landify
+      </p>
+    </div>
 
-            <div className="w-full p-4">
-              <div className="flex justify-end items-center px-4 sm:px-8 md:px-16 lg:px-32">
-                <span className="w-20 h-[2px] bg-pm-300 mt-[1px]"></span>
-                <span className="ml-2 text-pm-600 text-body-sm-bold">
-                  CONNECT
-                </span>
-              </div>
-            </div>
-          </div>
-        </footer>
+    <div className="w-full  p-4">
+      <div className="flex justify-end items-center px-4 sm:px-8 md:px-16 lg:px-32">
+        <span className="mr-2 text-pm-600 text-body-sm-bold">
+          CONNECT
+        </span>
+        <span className="w-20 h-[2px] bg-pm-300 mt-[1px]"></span>
+
+        <div className="flex ml-4">
+        <PhotoCard size="sm" image="img/Icons.png" className="w-8 h-8 mx-1"/>
+        <PhotoCard size="sm" image="img/Icons1.png" className="w-8 h-8 mx-1"/>
+        <PhotoCard size="sm" image="img/Icons 2.png" className="w-8 h-8 mx-1"/>
+        <PhotoCard size="sm" image="img/Icons3.png" className="w-8 h-8 mx-1"/>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
       </div>
     </>
   );
