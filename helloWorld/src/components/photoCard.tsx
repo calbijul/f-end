@@ -9,9 +9,9 @@ interface CardProps {
 
 const PhotoCard: React.FC<CardProps> = ({ size,  image, className = "" }) => {
   const sizeClasses = {
-    sm: "w-60 h-90",
-    md: "w-48 h-48",
-    lg: "w-72 h-72",
+    sm: "w-70 h-100",
+    md: "w-58 h-58",
+    lg: "w-82 h-82",
   };
 
   return (

@@ -4,6 +4,7 @@ interface CardProps {
   size: "sm" | "lg";
   text: string;
   image: string; 
+  className?: string;
 }
 
 const ImgCard: React.FC<CardProps> = ({ size, image }) => {
