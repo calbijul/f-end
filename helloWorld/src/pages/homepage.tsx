@@ -12,7 +12,6 @@ const Homepage: FC = () => {
 
   return (
     <div className="flex flex-col min-h-screen">
-      {/* Sidebar */}
       <div
   className={`fixed inset-y-0 right-0 bg-white z-10 transform w-1/2 ${
     isSidebarOpen ? "translate-x-0" : "translate-x-full"
@@ -33,8 +32,6 @@ const Homepage: FC = () => {
   </nav>
 </div>
 
-
-      {/* Header */}
       <header className="bg-white p-4 xs:px-4 sm:px-8 md:px-16 lg:px-32 text-black flex justify-between items-center z-20 relative overflow-auto">
         <h1 className="text-2xl sm:text-3xl font-bold tracking-widest text-black">
           INTEO
