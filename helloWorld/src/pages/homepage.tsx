@@ -6,8 +6,8 @@ import PhotoCard from "../components/photoCard";
 const Homepage: FC = () => {
   return (
     <>
-      <div className="">
-        <header className="bg-white p-4 sm:px-8 md:px-16 lg:px-32 text-black flex justify-between items-center z-20 relative overflow-auto">
+      <div className="flex flex-col min-h-screen">
+        <header className="bg-white p-4 xs:px-4 sm:px-8 md:px-16 lg:px-32 text-black flex justify-between items-center z-20 relative overflow-auto">
           <h1 className="text-2xl sm:text-3xl font-bold tracking-widest text-black">
             INTEO
           </h1>
@@ -20,7 +20,7 @@ const Homepage: FC = () => {
               <p className="text-black font-medium hover:text-pm-300 py-2 px-4 cursor-pointer">
                 Services
               </p>
-              <p className="text-black font-medium hover:text-pm-300 py-2 px-4 cursor-pointer">
+              <p className="text-black font-medium hover:text-pm-300 py-2 px-4 cursor-pointer whitespace-nowrap">
                 Our Work
               </p>
             </div>
@@ -28,7 +28,7 @@ const Homepage: FC = () => {
           </nav>
         </header>
 
-        <main className="overflow-x-auto h-screen">
+        <main className="flex-grow overflow-x-auto">
           <div className="flex justify-center items-center mt-16">
             <h3 className="font-playfair text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-center">
               Make <i>your home</i> an ode to joy
@@ -38,7 +38,7 @@ const Homepage: FC = () => {
           <div>
             <p className="text-body-xl-light break-words px-4 sm:px-8 md:px-16 lg:px-32 text-center">
               We turn your empty house into a lovely home, making the compact
-              spaces with space-saving furniture. Making the unique tastes of
+              spaces with space-saving furniture. Making unique tastes of
               yours into reality!
             </p>
           </div>
@@ -58,16 +58,16 @@ const Homepage: FC = () => {
             </span>
           </div>
 
-          <div className="flex px-4 sm:px-8 md:px-16 lg:px-32 mt-5 flex-col md:flex-row">
+          <div className="flex px-4 sm:px-8 md:px-16 lg:px-32 mt-5 flex-col md:flex-row justify-center">
             <div className="w-full md:w-1/2 p-4">
               <div>
-                <p className="font-playfair text-display-xl-regular">
+                <p className="font-playfair text-display-xl-regular ">
                   We help to bring you <i>dream home</i> to reality
                 </p>
               </div>
 
               <div>
-                <p className="font-outfit text-body-lg-light mt-5">
+                <p className="font-outfit text-body-lg-light mt-5 ">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                   Faucibus fringilla dui amet faucibus nam. Erat id laoreet
                   posuere etiam morbi.
@@ -81,7 +81,7 @@ const Homepage: FC = () => {
               </div>
             </div>
 
-            <div className=" p-10 flex  ">
+            <div className="flex justify-center px-4">
               <PhotoCard size="sm" text="Hello World" image="img/Image1.png" />
             </div>
             <div className="flex justify-center items-center ">
@@ -136,7 +136,9 @@ const Homepage: FC = () => {
               </div>
             </div>
           </div>
+        </main>
 
+        <footer className="mt-auto">
           <div className="flex items-center px-4 sm:px-8 md:px-16 lg:px-32">
             <span className="w-full h-[1px] bg-pm-300 mt-[1px]"></span>
           </div>
@@ -157,7 +159,7 @@ const Homepage: FC = () => {
               </div>
             </div>
           </div>
-        </main>
+        </footer>
       </div>
     </>
   );
